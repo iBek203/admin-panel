@@ -14,10 +14,24 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', [AdminController::class, 'index']);
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/admin', [AdminController::class, 'admin']);
+//Route::get('/', [AdminController::class, 'index']);
+//
+//Route::get('/admin', [AdminController::class, 'admin']);
+//
+//Route::get('/admin/add-product', [AdminController::class, 'add_product']);
+//
+//Route::post('/admin/product/check', [AdminController::class, 'create']);
 
-Route::get('/admin/add-product', [AdminController::class, 'add_product']);
+Auth::routes();
 
-Route::post('/admin/product/check', [AdminController::class, 'create']);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::group(['middleware' => ['role:admin']], function () {
+    Route::get('/test', function (){
+       return view('test');
+    });
+});
