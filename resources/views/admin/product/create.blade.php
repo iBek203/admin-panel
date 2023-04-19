@@ -54,7 +54,8 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Description</label>
-                                    <textarea name="description" class="editor"></textarea>
+                                    <textarea type="text" name="description" class="form-control" id="exampleInputEmail1"
+                                              placeholder="Enter the description" required></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="feature_image">Feature Image</label>

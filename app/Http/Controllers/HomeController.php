@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -22,8 +23,18 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index(Request $request)
+    public function index()
     {
-        return view('home');
+        $products = Product::orderBy('created_at', 'DESC')->get();
+
+        return view('home', [
+            'products' => $products
+        ]);
+    }
+    public function show(Product $product)
+    {
+        return view('show',[
+            'product' => $product
+        ]);
     }
 }
