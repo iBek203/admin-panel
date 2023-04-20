@@ -72,9 +72,9 @@ We need to set in .env file our database settings
 
 then `composer i`
 
-    `npm i`
+`npm i`
     
-    `composer migrate`
+    `php artisan migrate`
     
     `php artisan key:generate`
     
