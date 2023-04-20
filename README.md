@@ -65,14 +65,24 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
+
 ## To start this progect
+
 We need to set in .env file our database settings
+
 then `composer i`
+
     `npm i`
+    
     `composer migrate`
+    
     `php artisan serve`
+    
     `php artisan permission:create-role user`
+    
     `php artisan permission:create-role admin`
+    
     then 
     `php artisan serve`
+    
     when we create admin we need to go to the "model_has_roles" in the database and put 2 in the role_id
