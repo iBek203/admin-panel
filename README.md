@@ -89,4 +89,8 @@ then `composer i`
     then 
     `php artisan serve`
     
-    when we create admin we need to go to the "model_has_roles" in the database and put 2 in the role_id
+    when we create admin account we need to go to the "model_has_roles" table in the database and put 2 in the role_id of our account
+
+    then 
+    `php artisan serve`
+    after then we login to this account and in the route put /admin_panel
