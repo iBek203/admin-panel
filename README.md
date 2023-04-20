@@ -88,7 +88,8 @@ then `composer i`
     
 then 
 `php artisan serve`
-    
+
+we need to create account in our website so we press Register button
 when we create admin account we need to go to the "model_has_roles" table in the database and put 2 in the role_id of our account
 
 then 
