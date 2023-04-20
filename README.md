@@ -79,8 +79,8 @@ then `composer i`
 `php artisan key:generate`
     
 `php artisan serve`
-    
-`npm run dev`
+
+we need new terminal to run this `npm run dev`
     
 `php artisan permission:create-role user`
     
