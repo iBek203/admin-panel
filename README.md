@@ -76,7 +76,11 @@ then `composer i`
     
     `composer migrate`
     
+    `php artisan key:generate`
+    
     `php artisan serve`
+    
+    `npm run dev`
     
     `php artisan permission:create-role user`
     
