@@ -74,23 +74,23 @@ then `composer i`
 
 `npm i`
     
-    `php artisan migrate`
+`php artisan migrate`
     
-    `php artisan key:generate`
+`php artisan key:generate`
     
-    `php artisan serve`
+`php artisan serve`
     
-    `npm run dev`
+`npm run dev`
     
-    `php artisan permission:create-role user`
+`php artisan permission:create-role user`
     
-    `php artisan permission:create-role admin`
+`php artisan permission:create-role admin`
     
-    then 
-    `php artisan serve`
+then 
+`php artisan serve`
     
-    when we create admin account we need to go to the "model_has_roles" table in the database and put 2 in the role_id of our account
+when we create admin account we need to go to the "model_has_roles" table in the database and put 2 in the role_id of our account
 
-    then 
-    `php artisan serve`
-    after then we login to this account and in the route put /admin_panel
+then 
+`php artisan serve`
+after then we login to this account and in the route put /admin_panel
